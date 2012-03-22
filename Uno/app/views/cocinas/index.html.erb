@@ -1,0 +1,10 @@
+<% title "Chat" %>
+
+<ul id="chat">
+  <%= render @cocinas %>
+</ul>
+
+<%= form_for Cocina.new, :remote => true do |f| %>
+  <%= f.text_field :content %>
+  <%= f.submit "Send" %>
+<% end %>
