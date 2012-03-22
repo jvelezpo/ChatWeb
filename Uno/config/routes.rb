@@ -1,7 +1,6 @@
 Chatter::Application.routes.draw do
-  resources :messages
   resources :deportes
   resources :cocinas
 
-  root :to => 'messages#index'
+  root :to => 'pages#index'
 end

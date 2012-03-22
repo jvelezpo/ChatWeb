@@ -1,5 +1,5 @@
 body {
-  background-color: #4B7399;
+  background-color: white;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
 }
@@ -19,12 +19,13 @@ a {
 }
 
 #container {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   background-color: #FFF;
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
+  padding-bottom: 100px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
@@ -77,8 +78,7 @@ a {
 ul#chat {
   list-style: none;
   padding: 0;
-  width: 300px;
-  height: 150px;
+  height: 250px;
   border: solid 1px #777;
   margin: 5px 0;
   overflow: auto;
@@ -99,4 +99,34 @@ ul#chat li .created_at {
 
 input#message_content {
   width: 240px;
+}
+
+#newMsg {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #09c;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #069;
+}
+
+a:visited {
+    color: #069;
+}
+
+#atras {
+    float: right;
+}
+
+#footer {
+    float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #079;
 }

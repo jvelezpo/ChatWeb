@@ -1,5 +1,6 @@
 class CocinasController < ApplicationController
   def index
+    @title = "Cocina"
     @cocinas = Cocina.all
   end
 

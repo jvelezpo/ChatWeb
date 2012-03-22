@@ -1,11 +1,11 @@
 <div id="atras"><%= link_to "atras", root_path %></div>
-<h1><center>Sala Cocina</center></h1>
+<h1><center>Sala Deporte</center></h1>
 
 <ul id="chat">
-  <%= render @cocinas %>
+  <%= render @deportes %>
 </ul>
 <div id="newMsg">
-    <%= form_for Cocina.new, :remote => true do |f| %>
+    <%= form_for Deporte.new, :remote => true do |f| %>
       <%= f.text_field :content, :size => 50, :maxlength => 140 %>
       <%= f.submit "Send" %>
     <% end %>

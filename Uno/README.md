@@ -4,6 +4,10 @@
 ####James David Benitez
 ####Juan Esteban Mosquera
 
+##Antes
+`gem install faye`
+`gem install thin`
+
 ##Mode de Uso
 Correr primero `rackup faye.ru -s thin -E production`
 
