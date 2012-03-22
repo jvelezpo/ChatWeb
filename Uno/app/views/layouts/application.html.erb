@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag :defaults, "http://localhost:9292/faye.js" %>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="container">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+
+      <%= yield %>
+    </div>
+    <div id="footer">
+      Por:<br />
+      Juan Sebastian Velez Posada<br />
+      James David Benitez<br />
+      Juan Esteban Mosquera
+    </div>
+  </body>
+</html>

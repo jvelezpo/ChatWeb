@@ -1,0 +1,14 @@
+<div id="userName">Conectado como <%= current_nickname %>. <%= link_to "Salir", "#" %></div>
+<div id="atras"><%= link_to "Atras", pages_path %></div>
+<br /><br /><br />
+<h1><center>Sala Cocina</center></h1>
+
+<ul id="chat">
+  <%= render @cocinas %>
+</ul>
+<div id="newMsg">
+    <%= form_for Cocina.new, :remote => true do |f| %>
+      <%= f.text_field :content, :size => 50, :maxlength => 160, :minlength => 2 %>
+      <%= f.submit "Send" %>
+    <% end %>
+</div>
