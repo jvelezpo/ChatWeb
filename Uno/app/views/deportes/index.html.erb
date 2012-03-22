@@ -6,7 +6,7 @@
 </ul>
 <div id="newMsg">
     <%= form_for Deporte.new, :remote => true do |f| %>
-      <%= f.text_field :content, :size => 50, :maxlength => 140 %>
+      <%= f.text_field :content, :size => 50, :maxlength => 160 %>
       <%= f.submit "Send" %>
     <% end %>
 </div>
