@@ -120,6 +120,9 @@ a:visited {
 }
 
 #atras {
+    float: left;
+}
+#userName {
     float: right;
 }
 

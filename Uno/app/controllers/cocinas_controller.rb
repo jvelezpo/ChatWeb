@@ -1,7 +1,7 @@
 class CocinasController < ApplicationController
   def index
-    @title = "Cocina"
     @cocinas = Cocina.all
+    @title = "Cocina"
   end
 
   def create

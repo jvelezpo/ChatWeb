@@ -1,4 +1,4 @@
-<div id="atras"><%= link_to "atras", root_path %></div>
+
 <h1><center>Sala Deporte</center></h1>
 
 <ul id="chat">
@@ -6,7 +6,7 @@
 </ul>
 <div id="newMsg">
     <%= form_for Deporte.new, :remote => true do |f| %>
-      <%= f.text_field :content, :size => 50, :maxlength => 160 %>
+      <%= f.text_field :content, :size => 50, :maxlength => 160, :minlength => 2 %>
       <%= f.submit "Send" %>
     <% end %>
 </div>

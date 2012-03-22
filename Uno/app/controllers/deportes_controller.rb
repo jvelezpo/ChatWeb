@@ -1,7 +1,7 @@
 class DeportesController < ApplicationController
   def index
+    @deportes = Deporte.all
     @title = "Deporte"
-    @deportes = Cocina.all
   end
 
   def create

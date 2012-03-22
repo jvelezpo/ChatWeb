@@ -3,4 +3,5 @@ class PagesController < ApplicationController
     @title = "Chat Web"
   end
 
+
 end
