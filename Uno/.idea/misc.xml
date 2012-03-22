@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
@@ -7,5 +8,11 @@
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="ruby-1.8.7-p352" project-jdk-type="RUBY_SDK" />
+=======
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="ruby-1.9.2-p290" project-jdk-type="RUBY_SDK" />
+>>>>>>> f5732486295a61cefde1184170afb70fbd50e688
 </project>
 
