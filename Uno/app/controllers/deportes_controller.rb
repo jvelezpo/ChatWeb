@@ -8,6 +8,9 @@ class DeportesController < ApplicationController
   end
 
   def create
-    @deportes = Deporte.create!(params[:deporte])
+    var = params[:cocina].to_s
+    var["content"] = ""
+    
+    @deportes = Deporte.create!(:content => "#{session[:nickname]} dice: #{var}")
   end
 end
