@@ -79,9 +79,11 @@ ul#chat {
   list-style: none;
   padding: 0;
   height: 250px;
+  width: 70%;
   border: solid 1px #777;
   margin: 5px 0;
   overflow: auto;
+  margin-left: auto;
 }
 
 ul#chat li {
@@ -124,6 +126,10 @@ a:visited {
 }
 #userName {
     float: right;
+}
+
+#onlineUsers {
+    float: left;
 }
 
 #footer {

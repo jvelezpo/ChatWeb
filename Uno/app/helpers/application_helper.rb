@@ -13,4 +13,6 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
+
+
 end

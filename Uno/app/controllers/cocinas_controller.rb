@@ -8,9 +8,8 @@ class CocinasController < ApplicationController
   end
 
   def create
-    var = params[:cocina].to_s
-    var["content"] = ""
-
-    @cocinas = Cocina.create!(:content => "#{session[:nickname]} dice: #{var}")
+    var = params[:cocina]
+    @cocinas = Cocina.create!(:content => "#{session[:nickname]} dice: #{var["content"]}")
   end
-end
+
+ end
