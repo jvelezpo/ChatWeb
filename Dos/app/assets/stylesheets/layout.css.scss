@@ -1,0 +1,161 @@
+body {
+  background-color: #E6E6E6;
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  color: #717475;
+  font-size: 75%;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #043;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.mensajes {
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.entrar {
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #EEE;
+  padding: 20px 40px;
+  border-left: solid 1px #CCC;
+  border-right: solid 1px #CCC;
+  margin-top: 20px;
+}
+
+#flash_notice {
+  text-align: center;
+  padding: 5px 8px;
+  color: #6C6;
+  font-size: 115%;
+}
+
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+#header {
+  text-align: right;
+  font-weight: bold;
+}
+
+table.r {
+  margin: auto;
+  border: 1px solid #999999;  
+  border-collapse: collapse;
+}
+
+table td.v {
+  padding: 2px 5px;
+  text-align: left;
+  border: 1px solid #cccccc;
+}
+
+table th.r, table td.r {
+  padding: 2px 5px;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+
+table th.r {
+  color: inherit;
+  background-color: #e8e8e8;
+}
+
+table tr.odd {
+  color: inherit;
+  background-color: #f8f8f8;
+}
+
+table tr.even {
+  color: inherit;
+  background-color: #f0f0f0;
+}
+
+table tr.highlight {
+  color: inherit;
+  background-color: #ccffbb;
+}
+table tr.error {
+  color: inherit;
+  background-color: #f8f8f8;
+}
+
+tt {
+  font-size: 1.2em;
+}
+
+#search_results {
+  padding: 10px;
+}
+
+.spinner {
+  padding-top: 10px;
+  display:  none;
+}

@@ -1,0 +1,19 @@
+<div class="center"><h1>Chat</h1></div><br><br>
+
+
+<% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+
+
+<%= content_tag :div, :id => "mensajes", :"data-url" => messages_path(:format => :js) do%>
+    <%= render "messages" %>
+<% end %>
+
+<div class="mensajes">
+
+  <%= form_for Mensaje.new, :url => messages_path, :remote => true do |f| %>
+    <%= f.text_field :texto, :id => "chatTexto" %>
+    <%= f.submit "Send" %>
+  <% end %>
+</div>
