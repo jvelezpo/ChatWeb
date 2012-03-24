@@ -1,10 +1,16 @@
 class DeportesController < ApplicationController
+
+  before_filter :require_nickname
+
   def index
     @deportes = Deporte.all
     @title = "Deporte"
   end
 
   def create
-    @deportes = Deporte.create!(params[:deporte])
+    var = params[:deporte].to_s
+    var["content"] = ""
+    
+    @deportes = Deporte.create!(:content => "#{session[:nickname]} dice: #{var}")
   end
 end

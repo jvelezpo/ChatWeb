@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def require_nickname
-    redirect_to root_path unless logged_in?
+    redirect_to root_path, :notice => "debes identificarte!" unless logged_in?
   end
 
 end
