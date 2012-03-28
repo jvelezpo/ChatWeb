@@ -11,7 +11,7 @@
     `bundle exec rake db:migrate`
     
 
-##Mode de Uso
+##Modo de Uso
 Correr primero `rackup faye.ru -s thin -E production`
 
 abrir otra consola y correr `rails s`
