@@ -1,8 +1,15 @@
- <div id="userName">Conectado como <%= current_nickname %>. <%= link_to "Salir", "#" %></div>
- <div id="atras"><%= link_to "Atras", pages_path %></div>
- <br /><br /><br />
+<div id="userName">Conectado como <%= current_nickname %>. <%= link_to "Salir", inicios_path, :method => :delete, :confirm => "De verdad deseas salir de este maravilloso chat?" %></div>
+<div id="atras"><%= link_to "Atras", pages_path %></div>
+<br /><br /><br />
 
-<h1><center>Sala Deporte</center></h1>
+<h1><center>Sala Cocina</center></h1>
+
+<div id="onlineUsers">
+  <strong>Usuarios Online</strong> <br />
+  <% get_online_users.each do |name| %>
+      <%= name %><br />
+  <% end %>
+</div>
 
 <ul id="chat">
   <%= render @deportes %>
