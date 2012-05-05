@@ -1,13 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * Chateo.java
- *
- * Created on 05-may-2012, 8:32:43
- */
 package chatgrueso;
 
 import com.mysql.jdbc.Connection;
@@ -18,10 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author sebastian
- */
+
 public class Chateo extends javax.swing.JPanel {
 
     /** Creates new form Chateo */
