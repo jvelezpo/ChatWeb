@@ -1,21 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * Ingreso.java
- *
- * Created on 05-may-2012, 8:26:19
- */
 package chatgrueso;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author sebastian
- */
+
 public class Ingreso extends javax.swing.JPanel {
 
     /** Creates new form Ingreso */
