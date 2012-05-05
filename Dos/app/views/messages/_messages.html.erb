@@ -1,5 +1,0 @@
-<% @messages.each do |message| %>
-  <%= div_for message do %>
-    <span><%= l message.created_at, :format => "[%I:%M%p]" %> </span><b><%= message.de %>:</b> <span><%= message.texto %></span>
-  <% end %>
-<% end %>
