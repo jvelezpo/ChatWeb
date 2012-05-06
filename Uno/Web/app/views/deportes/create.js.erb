@@ -1,0 +1,4 @@
+<% broadcast "/deportes/new" do %>
+  $("#chat").append("<%= escape_javascript render(@deportes) %>");
+<% end %>
+$("#new_deporte")[0].reset();
