@@ -1,19 +1,20 @@
 package chatgrueso;
 
 import com.mysql.jdbc.Connection;
-import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.Timestamp;
-import java.util.Calendar;
 import java.util.Date;
 import javax.swing.JOptionPane;
 
 
 public class Chateo extends javax.swing.JPanel {
 
+    HiloMensajes hiloMensajes = new HiloMensajes();
+    
     /** Creates new form Chateo */
     public Chateo() {
         initComponents();
+        hiloMensajes.start();
     }
 
     /** This method is called from within the constructor to
@@ -38,6 +39,7 @@ public class Chateo extends javax.swing.JPanel {
         });
 
         jTextArea1.setColumns(20);
+        jTextArea1.setEditable(false);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
@@ -84,19 +86,9 @@ public class Chateo extends javax.swing.JPanel {
             Statement sentencia = con.createStatement();
          
             sentencia.executeUpdate("INSERT INTO mensajes VALUES (NULL , '"+ChatGrueso.nombreUsuario+"', '"+mensaje+"', '"+fecha+"', '"+fecha+"')");
-            sentencia.close();
-         
-            String mensajes = "";
-            sentencia = con.createStatement();
-            ResultSet rs = sentencia.executeQuery("SELECT * FROM mensajes ORDER BY created_at LIMIT 0 , 20");
-            while (rs.next()){
-                mensajes += rs.getString("de") + ": ";
-                mensajes += rs.getString("texto") + "\n";
-            }
-            rs.close();
-         
-         
-            jTextArea1.setText(mensajes);
+            //sentencia.close();
+            //con.close();
+            
             tEnviar.setText("");
         }catch(Exception e){
             System.out.println("Error: "+e.getMessage());
@@ -104,10 +96,12 @@ public class Chateo extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_bEnviarActionPerformed
 
+  
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bEnviar;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    public static javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField tEnviar;
     // End of variables declaration//GEN-END:variables
 }
