@@ -14,8 +14,8 @@ public class ClienteGrueso extends JFrame{
     
     public static void main(String[] args) {
         chatGrueso.setVisible(true);
-        chatGrueso.setSize(500,400);
-        chatGrueso.setLocation(400,200);
+        chatGrueso.setSize(800,600);
+        chatGrueso.setLocation(100,100);
         chatGrueso.setDefaultCloseOperation(EXIT_ON_CLOSE);
         
         Usuario usuario = new Usuario();
