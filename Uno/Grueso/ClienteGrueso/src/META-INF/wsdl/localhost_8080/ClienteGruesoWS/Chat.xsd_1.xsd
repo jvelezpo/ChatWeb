@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2-b13 (branches/2.2-6964; 2012-01-09T18:04:18+0000) JAXWS-RI/2.2.6-promoted-b20 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="checkSala" type="tns:checkSala"/>
+
+<xs:element name="checkSalaResponse" type="tns:checkSalaResponse"/>
+
+<xs:element name="deleteUserOnline" type="tns:deleteUserOnline"/>
+
+<xs:element name="deleteUserOnlineResponse" type="tns:deleteUserOnlineResponse"/>
+
+<xs:element name="getMsg" type="tns:getMsg"/>
+
+<xs:element name="getMsgResponse" type="tns:getMsgResponse"/>
+
+<xs:element name="getSalas" type="tns:getSalas"/>
+
+<xs:element name="getSalasResponse" type="tns:getSalasResponse"/>
+
+<xs:element name="getUsersOnline" type="tns:getUsersOnline"/>
+
+<xs:element name="getUsersOnlineResponse" type="tns:getUsersOnlineResponse"/>
+
+<xs:element name="newMsg" type="tns:newMsg"/>
+
+<xs:element name="newMsgResponse" type="tns:newMsgResponse"/>
+
+<xs:element name="setUserOnline" type="tns:setUserOnline"/>
+
+<xs:element name="setUserOnlineResponse" type="tns:setUserOnlineResponse"/>
+
+<xs:complexType name="deleteUserOnline">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUserOnlineResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsersOnline">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getUsersOnlineResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkSala">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkSalaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSalas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getSalasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="newMsg">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="newMsgResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setUserOnline">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setUserOnlineResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMsg">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMsgResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
